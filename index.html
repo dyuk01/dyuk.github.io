@@ -187,6 +187,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -577,11 +581,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Projects</button>
+              <button data-filter-btn>Practice</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Concept</button>
             </li>
           </ul>
 
@@ -604,11 +608,92 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>DSA</button>
+                <button data-select-item>Practice</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Concept</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="All">
+              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/mainBlog.png" alt="todo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Main Blog</h3>
+
+                <p class="project-category">All</p>
+
+              </a>
+            </li>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #Project
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Team Project</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Personal Project</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Team Project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Personal Project</button>
               </li>
 
             </ul>
