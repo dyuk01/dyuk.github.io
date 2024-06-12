@@ -167,7 +167,7 @@ const translations = {
     aboutText2: "My academic interests are particularly focused on algorithms...",
     // Add more translations as needed
   },
-  kr: {
+  ko: {
     aboutTitle: "저에 대해",
     aboutText1: "저는 퍼듀 대학교의 3학년...",
     aboutText2: "제 학문적 관심사는 주로 알고리즘...",
@@ -184,7 +184,7 @@ function switchLanguage(language) {
 
 document.getElementById('languageSwitch').addEventListener('change', function() {
   if (this.checked) {
-    switchLanguage('kr');
+    switchLanguage('ko');
   } else {
     switchLanguage('en');
   }
