@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./main/assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./main/assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--
+    - Language slide bar
+  -->
+  <div class="language-toggle">
+    <input type="checkbox" id="languageSwitch">
+    <label for="languageSwitch">EN | KR</label>
+  </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./main/assets/images/Peter.jpg" alt="Peter Yuk" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Peter Yuk">Dokyung Yuk</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:peteryuk91@gmail.com" class="contact-link">peteryuk91@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+17652997863" class="contact-link">+1 (765) 299-7863</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-09-19">Sep 19, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Lafayette, Indiana, USA</address>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/6.gamja/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a target="_blank" rel="noopener" href="https://github.com/dyuk01" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/peter-yuk-a3aba3254/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Coursework</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Junior at Purdue University, majoring in Computer Science, where I have the opportunity to 
+            explore into various aspects of technology that interests me. Alongside my academic pursuits, 
+            I have a strong passion for fitness and video editing where I can express creativity and care for my health.  
+            My journey began in Seoul, South Korea, where I was born and raised. Growing up in a city known for its technological advancements, 
+            I was constantly surrounded by cutting-edge innovations. This environment fostered my fascination with 
+            computers and their endless possibilities, ultimately guiding me toward a career in computer science.
+          </p>
+          <p>
+            My academic interests are particularly focused on algorithms, software engineering, and machine learning. 
+            I am enthusiastic about the potential these fields hold for expressing creativity and driving innovation. 
+            Algorithms intrigue me with their ability to solve complex problems efficiently, while software engineering 
+            provides a robust framework for developing scalable and reliable applications. Machine learning, on the other hand, 
+            excites me with its potential to transform data into actionable insights, pushing the boundaries of what computers can achieve.
+          </p>
+   
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./main/assets/images/icon-algorithm.png" alt="Algorithm icon" width="45">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Algorithm</h4>
+
+                <p class="service-item-text">
+                  Develop and run various of algorithms.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./main/assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Development of high-quality online sites.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./main/assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Development of applications for iOS and Android.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Purdue University</h4>
+
+              <span>2022.08 — 2026.06 (expected)</span>
+
+              <p class="timeline-text">
+                  Bachelor of Science in Computer Science
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kimball Union Academy</h4>
+
+              <span>2016.09 — 2020.06</span>
+
+              <p class="timeline-text">
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Internship</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Naver Corporation</h4>
+
+              <span>2023.06 — 2023.08</span>
+
+              <p class="timeline-text">
+                Responsible for English localization and development of online instructions for the Naver Works application. 
+                Applied short codes in the Naver Cloud department using WordPress and collaborated with cross-functional 
+                teams to enhance user experience and interface for international users. Responsible for English localization and development 
+                of online instructions for the Naver Works application. Applied short codes in the Naver Cloud department using WordPress and 
+                collaborated with cross-functional teams to enhance user experience and interface for international users.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HACCP Korea</h4>
+
+              <span>2022.06 — 2022.08</span>
+
+              <p class="timeline-text">
+                Set up the infrastructure for the 2022 Human Resources Exchange Program in South Korea, 
+                working closely with officials from Vietnam and Indonesia in the Ministry of Food and Drug Safety Department. 
+                Provided interpretation services to facilitate effective communication and collaboration.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ETH Tech</h4>
+
+              <span>2020.07 — 2020.12</span>
+
+              <p class="timeline-text">
+                At ETH Tech, responsibilities included focusing on hardware setup and management using Linux Ubuntu. 
+                Gained hands-on experience in server management and hardware troubleshooting, and installed cryptocurrency miners 
+                for various companies. This role significantly enhanced technical skill sets in cybersecurity and hardware management.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="shield-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Service</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Republic Of Korea Army</h4>
+
+              <span>2020.12 — 2022.06</span>
+
+              <p class="timeline-text">
+                  Achieved the title of "Top Soldier" starting from Private First Class and received a 
+                  commendation award for outstanding performance. Deployed as an interpreter at Incheon International Airport 
+                  during the COVID-19 pandemic, facilitating communication and coordination between military and civilian personnel. 
+                  Supervised and trained a team of soldiers, ensuring operational readiness and discipline, 
+                  and managed and maintained equipment, ensuring all assets were in optimal condition.
+              </p>
+
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <!--
+                <data value="85">Adept</data>
+                -->
+              </div>
+<!--
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+-->
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+              </div>
+            </li> 
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CourseWork
+      -->
+
+      <article class="coursework" data-page="coursework">
+
+        <header>
+          <h2 class="h2 article-title">Coursework</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">CS Courses taken</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <a target="_blank" rel="noopener" href="https://selfservice.mypurdue.purdue.edu/prod/bzwsrch.p_catalog_detail?term=202420&subject=CS&cnbr=39000&enhanced=Y">
+                <h4 class="h4 timeline-item-title">CS390</h4>
+              </a>
+              <span>2024 Spring</span>
+
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs251.html">
+                <h4 class="h4 timeline-item-title">CS251</h4>
+              </a>
+              <span>2024 Spring</span>
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html">
+                <h4 class="h4 timeline-item-title">CS250</h4>
+              </a>
+              <span>2024 Spring</span>
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs240.html">
+                <h4 class="h4 timeline-item-title">CS240</h4>
+              </a>
+              <span>2023 Fall</span>
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html">
+                <h4 class="h4 timeline-item-title">CS182</h4>
+              </a>
+              <span>2023 Spring</span>
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <a target="_blank" rel="noopener" href="https://www.cs.purdue.edu/academic-programs/courses/canonical/cs180.html">
+                <h4 class="h4 timeline-item-title">CS180</h4>
+              </a>
+              <span>2022 Fall</span>
+              <p class="timeline-text">
+              </p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Practice</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Concept</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Practice</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Concept</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="All">
+              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/about/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-blog.png" alt="todo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Main Blog</h3>
+
+                <p class="project-category"></p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="Practice">
+              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#leetcode">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-leetcode.png" alt="leetcode" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LeetCode</h3>
+
+                <p class="project-category">Practice</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="Concept">
+              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#algorithm">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-algo.png" alt="algorithm" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Algorithm</h3>
+
+                <p class="project-category">Concept</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="Concept">
+              <a target="_blank" rel="noopener" href="https://dyuk01.github.io/blog/category/#installation">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-installation.png" alt="todo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Installation</h3>
+
+                <p class="project-category">Concept</p>
+
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!--
+        - #Project
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Team Project</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Personal Project</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Team Project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Personal Project</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Personal Project">
+              <a target="_blank" rel="noopener" href="https://github.com/dyuk01/main">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-portfolio.png" alt="Portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portfolio</h3>
+
+                <p class="project-category">Personal Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Personal Project">
+              <a target="_blank" rel="noopener" href="https://github.com/dyuk01/blog">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./main/assets/images/icon-blog.png" alt="blog" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Blog</h3>
+
+                <p class="project-category">Personal Project</p>
+
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.3244179667986!2d-86.9075997874196!3d40.42381475508734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2a908ee24dd%3A0xcd049b87810258e3!2s46%20N%20Salisbury%20St%2C%20West%20Lafayette%2C%20IN%2047906!5e0!3m2!1sen!2sus!4v1710198227879!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/peteryuk91@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_autoresponse" value="Thank you for the submission! I will respond to your email shortly.">
+              <input type="hidden" name="_template" value="table">
+              <form action="https://formsubmit.co/asdsadsadwasd" method="POST" />
+              <input type="hidden" name="_next" value="https://dyuk01.github.io/main/thanks.html">
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" enabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+    </article>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./main/assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
