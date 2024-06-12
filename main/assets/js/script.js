@@ -158,14 +158,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+'use strict';
+
+const translations = {
+  en: {
+    aboutTitle: "About me",
+    aboutText1: "I'm a Junior at Purdue University, majoring in Computer Science...",
+    aboutText2: "My academic interests are particularly focused on algorithms...",
+    // Add more translations as needed
+  },
+  ko: {
+    aboutTitle: "저에 대해",
+    aboutText1: "저는 퍼듀 대학교의 3학년...",
+    aboutText2: "제 학문적 관심사는 주로 알고리즘...",
+    // Add more translations as needed
+  }
+};
+
+function switchLanguage(language) {
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    element.textContent = translations[language][key];
+  });
+}
+
 document.getElementById('languageSwitch').addEventListener('change', function() {
   if (this.checked) {
-    // Change to Korean
-    document.documentElement.lang = 'ko';
-    // Implement your translation logic here
+    switchLanguage('ko');
   } else {
-    // Change to English
-    document.documentElement.lang = 'en';
-    // Implement your translation logic here
+    switchLanguage('en');
   }
 });
