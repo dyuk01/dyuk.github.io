@@ -157,3 +157,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.getElementById('languageSwitch').addEventListener('change', function() {
+  if (this.checked) {
+    // Change to Korean
+    document.documentElement.lang = 'ko';
+    // Implement your translation logic here
+  } else {
+    // Change to English
+    document.documentElement.lang = 'en';
+    // Implement your translation logic here
+  }
+});
