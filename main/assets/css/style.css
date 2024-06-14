@@ -1881,21 +1881,3 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-/**
- * Language Slide Bar
- */
-
-.language-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 25px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-
-.language-toggle label {
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-}
