@@ -20,6 +20,7 @@
   /**
    * colors
    */
+   
 
   /* gradient */
 
@@ -160,7 +161,6 @@ body { background: var(--smoky-black); }
 
 
 
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -291,9 +291,6 @@ article.active {
   border-radius: inherit;
   z-index: -1;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -1879,4 +1876,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+
 }
+
